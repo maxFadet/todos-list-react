@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from "./Form";
+import Tasks from "./Tasks";
+import Buttons from "./Buttons";
+import Conteiner from "./Conteiner";
+import Header from "./Header";
+import Blank from "./Blank";
+
+
+const tasks = [
+  { id: 1, content: "przykładowo zrobione zadanie", done: true },
+  { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
+];
+
+const hideDoneTasks = false;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Blank>
+      <Header title="Lista zadań" />
+      <Conteiner
+        title="Dodaj nowe zadanie"
+        body={<Form />}
+      />
+
+      <Conteiner
+        title="Lista zadań"
+        body={
+          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
+        }
+        extraHeadercontent={
+          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
+        }
+      />
+
+    </Blank>
   );
 }
 

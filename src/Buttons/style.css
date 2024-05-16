@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+    .container .container__taskControlPanel {
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+    }
+}
+
+.container__taskControlPanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.container__headerButton {
+    border: none;
+    background-color: transparent;
+    color: teal;
+    transition: 0.4s;
+}
+
+.container__headerButton:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.container__headerButton:disabled {
+    color: hsl(0, 0%, 70%);
+    cursor: not-allowed;
+
+}
