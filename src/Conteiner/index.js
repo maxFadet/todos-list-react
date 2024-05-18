@@ -1,6 +1,5 @@
 import "./style.css";
 
-
 const Conteiner = ({ title, body, extraHeadercontent }) => (
     <section className="container">
         <div className="container__header container__header--headerWithButtons">

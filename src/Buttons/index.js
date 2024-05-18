@@ -3,8 +3,6 @@ import "./style.css";
 
 const Buttons = ({ tasks, hideDoneTasks }) => (
 
-
-
     <div className="container__taskControlPanel">
         {tasks.length > 0 && (
             <>
@@ -20,7 +18,6 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
             </>
         )}
     </div >
-
 );
 
 export default Buttons;
