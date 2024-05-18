@@ -11,9 +11,13 @@
     border-bottom: 2px solid #eeeeee;
     padding: 10px;
     align-items: center;
-  
 }
 
+@media (max-width: 767px) {
+    .tasks__item {
+        padding: 10px 0;
+    }
+}
 
 .tasks__item--hidden {
     display: none;
@@ -59,8 +63,8 @@
 }
 
 .tasks__button--delete:hover {
-background: hsl(355, 84%, 60%);
-transition: 0.2s;
+    background: hsl(355, 84%, 60%);
+    transition: 0.2s;
 }
 
 .tasks__button--delete:active {

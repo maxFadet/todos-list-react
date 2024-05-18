@@ -22,6 +22,12 @@
 }
 
 @media (max-width: 767px) {
+    .container__body {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 767px) {
     .container__header--headerWithButtons {
         grid-template-columns: 1fr;
         text-align: center;
