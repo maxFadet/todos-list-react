@@ -1,12 +1,12 @@
 
 import "./style.css";
 
-const Buttons = ({ tasks, hideDone }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone }) => (
 
     <div className="container__taskControlPanel">
         {tasks.length > 0 && (
             <>
-                <button className="container__headerButton">
+                <button onClick={toggleHideDone} className="container__headerButton">
                     {hideDone ? "Pokaż ukończone" : "Ukryj ukończone"}
                 </button>
                 <button
