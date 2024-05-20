@@ -11,7 +11,7 @@ const tasks = [
   { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
 ];
 
-const hideDoneTasks = false;
+const hideDone = false;
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
       <Conteiner
         title="Lista zadań"
         body={
-          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
+          <Tasks tasks={tasks} hideDone={hideDone} />
         }
         extraHeadercontent={
-          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
+          <Buttons tasks={tasks} hideDone={hideDone} />
         }
       />
 
