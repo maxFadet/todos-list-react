@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://maxfadet.github.io/To-Do-List/
+https://maxfadet.github.io/todos-list-react/
 
 ## Description:
 
