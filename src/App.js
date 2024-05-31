@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -82,6 +82,6 @@ function App() {
 
     </Blank>
   );
-}
+};
 
 export default App;
