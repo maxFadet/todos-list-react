@@ -6,12 +6,14 @@ import Conteiner from "./Conteiner";
 import Header from "./Header";
 import Blank from "./Blank";
 
+const defaultTasks = [
+  { id: 1, content: "przykładowo zrobione zadanie", done: true },
+  { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
+];
+
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "przykładowo zrobione zadanie", done: true },
-    { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
-  ]);
+  const [tasks, setTasks] = useState(defaultTasks);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
