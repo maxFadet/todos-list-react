@@ -1,19 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
-import Conteiner from "./Conteiner";
+import Container from "./Container";
 import Header from "./Header";
 import Blank from "./Blank";
-
-const defaultTasks = [
-  { id: 1, content: "przykładowo zrobione zadanie", done: true },
-  { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
-];
+import TaskLocalStorage from "./TaskLocalStorage";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(defaultTasks);
+  const [tasks, setTasks] = useState([]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -28,10 +24,9 @@ function App() {
       if (task.id === id) {
         return { ...task, done: !task.done };
       }
-
       return task;
     }));
-  }
+  };
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
@@ -54,12 +49,12 @@ function App() {
   return (
     <Blank>
       <Header title="Lista zadań" />
-      <Conteiner
+      <TaskLocalStorage tasks={tasks} setTasks={setTasks} />
+      <Container
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
       />
-
-      <Conteiner
+      <Container
         title="Lista zadań"
         body={
           <Tasks
@@ -78,7 +73,6 @@ function App() {
           />
         }
       />
-
     </Blank>
   );
 };
