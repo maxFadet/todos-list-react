@@ -46,6 +46,13 @@ function App() {
     ]);
   };
 
+  const clearLocalStorage = () => {
+    localStorage.removeItem("tasks");
+    localStorage.removeItem("hideDone");
+    setTasks([]);
+    setHideDone(false);
+  }
+
   return (
     <Blank>
       <Header title="Lista zadań" />
@@ -70,6 +77,7 @@ function App() {
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
             setAllDone={setAllDone}
+            clearLocalStorage={clearLocalStorage}
           />
         }
       />

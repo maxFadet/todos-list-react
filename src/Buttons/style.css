@@ -7,7 +7,7 @@
 
 .container__taskControlPanel {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
@@ -18,12 +18,31 @@
     transition: 0.4s;
 }
 
+.container__headerButton--usuwacz {
+    color: hsl(355, 84%, 55%);
+}
+
 .container__headerButton:hover {
     color: hsl(180, 100%, 35%);
+}
+
+.container__headerButton:active {
+    transform: scale(0.98);
+    transition: 0.2s ease;
+    color: hsl(180, 100%, 15%);
+}
+
+.container__headerButton--usuwacz:hover {
+    color: hsl(355, 84%, 65%);
+}
+
+.container__headerButton--usuwacz:active {
+    transform: scale(0.98);
+    transition: 0.2s ease;
+    color: hsl(355, 84%, 35%); 
 }
 
 .container__headerButton:disabled {
     color: hsl(0, 0%, 70%);
     cursor: not-allowed;
-
 }
