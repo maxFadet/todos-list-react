@@ -7,7 +7,7 @@
 
 .container__taskControlPanel {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
     grid-gap: 20px;
 }
 
@@ -39,7 +39,7 @@
 .container__headerButton--usuwacz:active {
     transform: scale(0.98);
     transition: 0.2s ease;
-    color: hsl(355, 84%, 35%); 
+    color: hsl(355, 84%, 35%);
 }
 
 .container__headerButton:disabled {
