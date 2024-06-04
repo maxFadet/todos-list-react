@@ -6,7 +6,7 @@ const TaskLocalStorage = ({ tasks, setTasks, hideDone, setHideDone }) => {
     if (savedTasks.length > 0) {
       setTasks(savedTasks);
     }
-  }, [setTasks]);
+  }, []);
 
   useEffect(() => {
     saveTasksToLocalStorage(tasks);
@@ -17,7 +17,7 @@ const TaskLocalStorage = ({ tasks, setTasks, hideDone, setHideDone }) => {
     if (savedHideDone) {
       setHideDone(savedHideDone);
     }
-  }, [setHideDone]);
+  }, []);
 
   useEffect(() => {
     saveHideDoneToLocalStorage(hideDone);
