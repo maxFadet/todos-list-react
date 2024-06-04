@@ -49,7 +49,7 @@ function App() {
   return (
     <Blank>
       <Header title="Lista zadań" />
-      <TaskLocalStorage tasks={tasks} setTasks={setTasks} />
+      <TaskLocalStorage tasks={tasks} setTasks={setTasks} hideDone={hideDone} setHideDone={setHideDone} />
       <Container
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
