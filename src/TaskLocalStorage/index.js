@@ -30,8 +30,8 @@ const TaskLocalStorage = ({ tasks, setTasks, hideDone, setHideDone }) => {
   const getTasksFromLocalStorage = () => {
     const tasks = localStorage.getItem("tasks");
     return tasks ? JSON.parse(tasks) : [
-        { id: 1, content: "przykładowo zrobione zadanie", done: true },
-        { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
+      { id: 1, content: "przykładowo zrobione zadanie", done: true },
+      { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
     ];
   };
 

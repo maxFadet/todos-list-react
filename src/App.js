@@ -51,7 +51,7 @@ function App() {
     localStorage.removeItem("hideDone");
     setTasks([]);
     setHideDone(false);
-  }
+  };
 
   return (
     <Blank>

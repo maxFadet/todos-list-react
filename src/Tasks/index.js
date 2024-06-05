@@ -27,7 +27,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
           ✗
         </button>
       </li>
-    ))}
+    ))};
   </ul>
 );
 

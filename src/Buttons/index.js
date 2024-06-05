@@ -24,7 +24,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, clearLocalStorag
                     Ukończ wszystkie
                 </button>
             </>
-        )}
+        )};
     </div >
 );
 
