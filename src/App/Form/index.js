@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./style.css";
 
 const Form = ({ addNewTask }) => {
@@ -14,16 +14,29 @@ const Form = ({ addNewTask }) => {
     setNewTaskContent("");
   };
 
+  const inputRef = useRef(null);
+
+  const focusInput = () => {
+    inputRef.current.focus();
+  };
+
   return (
     <form className="form" onSubmit={onFormSubmit}>
       <input
+        ref={inputRef}
         value={newTaskContent}
         className="form__textArea"
         placeholder="Co jest do zrobienia?"
         autoFocus
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      <button className="form__button">Dodaj zadanie</button>
+      <button
+        className="form__button"
+        onClick={focusInput}
+      >
+        Dodaj zadanie
+
+      </button>
     </form>
   );
 };
