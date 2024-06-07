@@ -47,6 +47,6 @@ function App() {
       />
     </Blank>
   );
-};
+}
 
 export default App;
