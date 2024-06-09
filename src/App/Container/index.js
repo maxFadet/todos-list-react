@@ -1,15 +1,9 @@
-import "./style.css";
+import { Wrapper } from "./styled";
 
-const Container = ({ title, body, extraHeadercontent }) => (
-    <section className="container">
-        <div className="container__header container__header--headerWithButtons">
-            <h2 className="container__title">{title}</h2>
-            {extraHeadercontent}
-        </div>
-        <div className="container__body">
-            {body}
-        </div>
-    </section>
+const Container = ({ children }) => (
+    <Wrapper>
+        {children}
+    </Wrapper>
 );
 
 export default Container;
