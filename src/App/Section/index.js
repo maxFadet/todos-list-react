@@ -1,15 +1,15 @@
-import "./style.css";
+import { Container, Header, Body } from "./styled"
 
 const Section = ({ title, body, extraHeadercontent }) => (
-    <section className="container">
-        <div className="container__header container__header--headerWithButtons">
-            <h2 className="container__title">{title}</h2>
+    <Container>
+        <Header>
+            <h2>{title}</h2>
             {extraHeadercontent}
-        </div>
-        <div className="container__body">
+        </Header>
+        <Body>
             {body}
-        </div>
-    </section>
+        </Body>
+    </Container>
 );
 
 export default Section;
