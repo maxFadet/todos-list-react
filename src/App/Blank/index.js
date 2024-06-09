@@ -1,10 +1,10 @@
-import "./style.css";
+import { Container } from "./styled";
 
 
 const Blank = ({ children }) => (
-    <main className="blank">
+    <Container>
         {children}
-    </main>
+    </Container>
 );
 
 export default Blank;
