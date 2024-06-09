@@ -1,15 +1,4 @@
-@media (max-width: 767px) {
-    .container .container__taskControlPanel {
-        grid-template-columns: 1fr;
-        padding-bottom: 20px;
-    }
-}
 
-.container__taskControlPanel {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 20px;
-}
 
 .container__headerButton {
     border: none;

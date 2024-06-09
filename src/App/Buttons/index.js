@@ -1,31 +1,26 @@
 
-import "./style.css";
+import { Panel, Button, SecondaryButton } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, clearLocalStorage }) => (
 
-    <div className="container__taskControlPanel">
+    <Panel>
         {tasks.length > 0 && (
             <>
-                <button
-                    onClick={clearLocalStorage}
-                    className="container__headerButton container__headerButton--usuwacz">
+                <SecondaryButton onClick={clearLocalStorage}>
                     Usuń wszystkie zadania
-                </button>
-                <button
-                    onClick={toggleHideDone}
-                    className="container__headerButton">
+                </SecondaryButton>
+                <Button onClick={toggleHideDone}>
                     {hideDone ? "Pokaż ukończone" : "Ukryj ukończone"}
-                </button>
-                <button
+                </Button>
+                <Button
                     onClick={setAllDone}
-                    className="container__headerButton"
                     disabled={tasks.every(({ done }) => done)}
                 >
                     Ukończ wszystkie
-                </button>
+                </Button>
             </>
         )}
-    </div >
+    </Panel>
 );
 
 export default Buttons;
