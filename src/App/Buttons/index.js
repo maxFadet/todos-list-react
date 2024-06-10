@@ -1,6 +1,12 @@
 import { Panel, Button, SecondaryButton } from "./styled";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, clearLocalStorage }) => (
+const Buttons = ({
+    tasks,
+    hideDone,
+    toggleHideDone,
+    setAllDone,
+    clearLocalStorage
+}) => (
 
     <Panel>
         {tasks.length > 0 && (
