@@ -37,5 +37,9 @@ export const theme = {
         largeButtonActive: "scale(0.998)",
         averageButtonActive: "scale(0.98)",
         smallButtonActive: "scale(0.93)",
-    }
+    },
+    cursor: {
+        cursorPointer: "pointer",
+        cursorNotAllowed: "not-allowed",
+    },
 };

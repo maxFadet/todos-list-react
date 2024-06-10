@@ -38,6 +38,7 @@ export const Button = styled.button`
     width: ${({ theme }) => theme.dimensions.buttonWidth};
     height: ${({ theme }) => theme.dimensions.buttonHeight};
     transition: ${({ theme }) => theme.transitions.button};
+    cursor: ${({ theme }) => theme.cursor.cursorPointer};
 
     &:active {
         transform: ${({ theme }) => theme.transforms.smallButtonActive};

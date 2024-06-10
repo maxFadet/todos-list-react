@@ -21,6 +21,7 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.secondaryText};
     border: none;
     transition: ${({ theme }) => theme.transitions.button};
+    cursor: ${({ theme }) => theme.cursor.cursorPointer};
 
     &:hover {
         transform: ${({ theme }) => theme.transforms.largeButtonHover};

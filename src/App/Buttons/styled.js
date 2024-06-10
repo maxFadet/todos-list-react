@@ -16,6 +16,7 @@ export const Button = styled.button`
     background-color: transparent;
     color: ${({ theme }) => theme.colors.accent};
     transition: ${({ theme }) => theme.transitions.button};
+    cursor: ${({ theme }) => theme.cursor.cursorPointer};
 
     &:hover {
         color: ${({ theme }) => theme.colors.accentHover};
@@ -29,7 +30,7 @@ export const Button = styled.button`
     ${({ disabled }) => disabled && css`
         &:disabled {
             color: ${({ theme }) => theme.colors.disabledText};
-            cursor: not-allowed;
+            cursor: ${({ theme }) => theme.cursor.cursorNotAllowed};
         }
     `};
 `;
