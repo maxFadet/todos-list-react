@@ -29,11 +29,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Applied immutability in JavaScript
   - React useState Hook
   - React useEffect Hook
+  - React useRef Hook
+  - React custom Hook
   - localStorage
   - ES6+ Features JavaScript
   - CSS Grid Layout
   - Media-queries
   - The box model
+  - Styled components
   - Normalize.css
   - BEM convention
   - Markdown
