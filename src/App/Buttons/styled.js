@@ -5,46 +5,45 @@ export const Panel = styled.div`
     grid-template-columns: repeat(3, auto);
     grid-gap: 20px;
 
-@media (max-width:767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         grid-template-columns: 1fr;
         padding-bottom: 20px;
-}
+    }
 `;
 
 export const Button = styled.button`
     border: none;
     background-color: transparent;
-    color: teal;
-    transition: 0.4s;
+    color: ${({ theme }) => theme.colors.accent};
+    transition: ${({ theme }) => theme.transitions.button};
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        color: ${({ theme }) => theme.colors.accentHover};
     }
 
     &:active {
-        transform: scale(0.98);
-        transition: 0.2s ease;
-        color: hsl(180, 100%, 15%);
+        transform: ${({ theme }) => theme.transforms.averageButtonActive};
+        color: ${({ theme }) => theme.colors.accentActive};
     }
 
     ${({ disabled }) => disabled && css`
         &:disabled {
-            color: hsl(0, 0%, 70%);
+            color: ${({ theme }) => theme.colors.disabledText};
             cursor: not-allowed;
         }
     `};
 `;
 
 export const SecondaryButton = styled(Button)`
-    color: hsl(355, 84%, 55%);
+    color: ${({ theme }) => theme.colors.removeButton};
 
     &:hover {
-        color: hsl(355, 84%, 65%);
+        color: ${({ theme }) => theme.colors.removeButtonHover};
     }
 
     &:active {
         transform: scale(0.98);
-        transition: 0.2s ease;
-        color: hsl(355, 84%, 35%);
+        transition: ${({ theme }) => theme.transitions.active};
+        color: ${({ theme }) => theme.colors.removeButtonActive};
     }
 `;

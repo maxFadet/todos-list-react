@@ -5,6 +5,10 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useTasksWithLocalStorage } from "./useTasksWithLocalStorage";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from './GlobalStyle';
+import { theme } from "./theme";
+
 
 function App() {
   const {
@@ -19,33 +23,36 @@ function App() {
   } = useTasksWithLocalStorage();
 
   return (
-    <Container>
-      <Header title="Lista zadań" />
-      <Section
-        title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
-      />
-      <Section
-        title="Lista zadań"
-        body={
-          <Tasks
-            tasks={tasks}
-            hideDone={hideDone}
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
-          />
-        }
-        extraHeadercontent={
-          <Buttons
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
-            setAllDone={setAllDone}
-            clearLocalStorage={clearLocalStorage}
-          />
-        }
-      />
-    </Container>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Container>
+        <Header title="Lista zadań" />
+        <Section
+          title="Dodaj nowe zadanie"
+          body={<Form addNewTask={addNewTask} />}
+        />
+        <Section
+          title="Lista zadań"
+          body={
+            <Tasks
+              tasks={tasks}
+              hideDone={hideDone}
+              removeTask={removeTask}
+              toggleTaskDone={toggleTaskDone}
+            />
+          }
+          extraHeadercontent={
+            <Buttons
+              tasks={tasks}
+              hideDone={hideDone}
+              toggleHideDone={toggleHideDone}
+              setAllDone={setAllDone}
+              clearLocalStorage={clearLocalStorage}
+            />
+          }
+        />
+      </Container>
+    </ThemeProvider>
   );
 }
 

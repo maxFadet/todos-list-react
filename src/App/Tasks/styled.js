@@ -10,17 +10,16 @@ export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
-    border-bottom: 2px solid #eeeeee;
-    padding: 10px;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
+    padding: ${({ theme }) => theme.spacing.contentPadding};
     align-items: center;
-    word-wrap: break-word;
-
+    
     ${({ hidden }) => hidden && css`
         display: none;
     `}
 
-    @media (max-width: 767px) {
-        padding: 10px 0;
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        padding: ${({ theme }) => theme.spacing.contentPadding} 0;
     }
 `;
 
@@ -33,41 +32,38 @@ export const Content = styled.span`
 `;
 
 export const Button = styled.button`
-    color: #fff;
+    color: ${({ theme }) => theme.colors.secondaryText};
     font-size: 20px;
     border: none;
-    width: 30px;
-    height: 30px;
-    padding: 0;
+    width: ${({ theme }) => theme.dimensions.buttonWidth};
+    height: ${({ theme }) => theme.dimensions.buttonHeight};
+    transition: ${({ theme }) => theme.transitions.button};
 
     &:active {
-        transform: scale(0.93);
-        transition: 0.2s ease;
+        transform: ${({ theme }) => theme.transforms.smallButtonActive};
     }
 
-    ${({ toggleDone }) => toggleDone && css`
-        background: hsl(122, 65%, 29%);
+    ${({ toggleDone, theme }) => toggleDone && css`
+        background: ${theme.colors.toggleButton};
 
         &:hover {
-            background: hsl(122, 65%, 35%);
-            transition: 0.2s;
+            background: ${theme.colors.toggleButtonHover};
         }
 
         &:active {
-            background: hsl(122, 65%, 40%);
+            background: ${theme.colors.toggleButtonActive};
         }
     `}
 
-    ${({ remove }) => remove && css`
-        background: hsl(355, 84%, 55%);
+    ${({ remove, theme }) => remove && css`
+        background: ${theme.colors.removeButton};
 
         &:hover {
-            background: hsl(355, 84%, 60%);
-            transition: 0.2s; 
+            background: ${theme.colors.removeButtonHover};
         }
 
         &:active {
-            background: hsl(355, 84%, 65%);
+            background: ${theme.colors.removeButtonActive};
         }
     `};
 `;

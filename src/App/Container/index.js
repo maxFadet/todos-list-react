@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Container = styled.main`
-    margin: 0 auto;
+    margin: ${({ theme }) => theme.spacing.containerMargin};
     padding: 10px;
-    max-width: 900px;
+    max-width: ${({ theme }) => theme.dimensions.containerMaxWidth};
 `;
 
 export default Container;
