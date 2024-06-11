@@ -5,10 +5,6 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useTasksWithLocalStorage } from "./useTasksWithLocalStorage";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from './GlobalStyle';
-import { theme } from "./theme";
-
 
 function App() {
   const {
@@ -23,8 +19,6 @@ function App() {
   } = useTasksWithLocalStorage();
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
       <Container>
         <Header title="Lista zadań" />
         <Section
@@ -52,7 +46,6 @@ function App() {
           }
         />
       </Container>
-    </ThemeProvider>
   );
 }
 
