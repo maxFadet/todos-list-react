@@ -14,37 +14,47 @@ export const Panel = styled.div`
 export const Button = styled.button`
     border: none;
     background-color: transparent;
-    color: ${({ theme }) => theme.colors.accent};
+    color: ${({ theme }) => theme.colors.teal};
     transition: ${({ theme }) => theme.transitions.button};
     cursor: ${({ theme }) => theme.cursor.cursorPointer};
 
     &:hover {
-        color: ${({ theme }) => theme.colors.accentHover};
+        filter: ${({ theme }) => theme.filters.buttonHover};
     }
 
     &:active {
         transform: ${({ theme }) => theme.transforms.averageButtonActive};
-        color: ${({ theme }) => theme.colors.accentActive};
+        filter: ${({ theme }) => theme.filters.buttonActive};
     }
 
-    ${({ disabled }) => disabled && css`
+    ${({ disabled, theme }) => disabled && css`
         &:disabled {
-            color: ${({ theme }) => theme.colors.disabledText};
-            cursor: ${({ theme }) => theme.cursor.cursorNotAllowed};
+            color: ${theme.colors.darkGrey};
+            cursor: ${theme.cursor.cursorNotAllowed};
         }
+
+        &:hover {
+            filter: ${theme.filters.buttonUnavailble};
+        }
+
+        &:active {
+            transform: none;
+            filter: ${theme.filters.buttonUnavailble};
+        }
+    
     `};
 `;
 
 export const SecondaryButton = styled(Button)`
-    color: ${({ theme }) => theme.colors.removeButton};
+    color: ${({ theme }) => theme.colors.alizarinCrimson};
 
     &:hover {
-        color: ${({ theme }) => theme.colors.removeButtonHover};
+        filter: ${({ theme }) => theme.filters.buttonHover};
     }
 
     &:active {
         transform: scale(0.98);
         transition: ${({ theme }) => theme.transitions.active};
-        color: ${({ theme }) => theme.colors.removeButtonActive};
+        filter: ${({ theme }) => theme.filters.buttonActive};
     }
 `;

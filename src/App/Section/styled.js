@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.white};
     margin-bottom: 10px;
-    box-shadow: 0 0 7px ${({ theme }) => theme.colors.shadow};
+    filter: drop-shadow(0 0 7px #dddddd)
 `;
 
 export const Header = styled.div`
@@ -12,7 +12,7 @@ export const Header = styled.div`
     grid-gap: 20px;
     padding: 0 ${({ theme }) => theme.spacing.sectionPadding};
     margin: 0;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.grey};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         grid-template-columns: 1fr;

@@ -10,7 +10,7 @@ export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.grey};
     padding: ${({ theme }) => theme.spacing.contentPadding};
     align-items: center;
     
@@ -32,7 +32,7 @@ export const Content = styled.span`
 `;
 
 export const Button = styled.button`
-    color: ${({ theme }) => theme.colors.secondaryText};
+    color: ${({ theme }) => theme.colors.white};
     font-size: 20px;
     border: none;
     width: ${({ theme }) => theme.dimensions.buttonWidth};
@@ -45,26 +45,26 @@ export const Button = styled.button`
     }
 
     ${({ toggleDone, theme }) => toggleDone && css`
-        background: ${theme.colors.toggleButton};
+        background: ${theme.colors.forestGreen};
 
         &:hover {
-            background: ${theme.colors.toggleButtonHover};
+            filter: brightness(120%);
         }
 
         &:active {
-            background: ${theme.colors.toggleButtonActive};
+            filter: brightness(70%);
         }
     `}
 
     ${({ remove, theme }) => remove && css`
-        background: ${theme.colors.removeButton};
+        background: ${theme.colors.alizarinCrimson};
 
         &:hover {
-            background: ${theme.colors.removeButtonHover};
+            filter: brightness(120%);;
         }
 
         &:active {
-            background: ${theme.colors.removeButtonActive};
+            filter: brightness(70%);
         }
     `};
 `;

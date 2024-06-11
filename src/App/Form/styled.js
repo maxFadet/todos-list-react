@@ -12,24 +12,24 @@ export const Frame = styled.form`
 
 export const Type = styled.input`
     padding: ${({ theme }) => theme.spacing.contentPadding};
-    border: 2px solid ${({ theme }) => theme.colors.primary};
+    border: 2px solid ${({ theme }) => theme.colors.grey};
 `;
 
 export const Button = styled.button`
     padding: 10px;
-    background-color: ${({ theme }) => theme.colors.accent};
-    color: ${({ theme }) => theme.colors.secondaryText};
+    background-color: ${({ theme }) => theme.colors.teal};
+    color: ${({ theme }) => theme.colors.white};
     border: none;
     transition: ${({ theme }) => theme.transitions.button};
     cursor: ${({ theme }) => theme.cursor.cursorPointer};
 
     &:hover {
         transform: ${({ theme }) => theme.transforms.largeButtonHover};
-        background: ${({ theme }) => theme.colors.accentHover};
+        filter: brightness(120%);
     }
 
     &:active {
         transform: ${({ theme }) => theme.transforms.largeButtonActive};
-        background: ${({ theme }) => theme.colors.accentActive};
+        filter: brightness(70%);
     }
 `;
