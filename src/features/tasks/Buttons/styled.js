@@ -44,17 +44,3 @@ export const Button = styled.button`
     
     `};
 `;
-
-export const SecondaryButton = styled(Button)`
-    color: ${({ theme }) => theme.colors.alizarinCrimson};
-
-    &:hover {
-        filter: ${({ theme }) => theme.filters.buttonHover};
-    }
-
-    &:active {
-        transform: scale(0.98);
-        transition: ${({ theme }) => theme.transitions.active};
-        filter: ${({ theme }) => theme.filters.buttonActive};
-    }
-`;
