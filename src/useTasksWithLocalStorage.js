@@ -5,11 +5,6 @@ export const useTasksWithLocalStorage = () => {
     
   });
 
-  const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id));
-  };
-
-
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
       ...task,
@@ -18,7 +13,6 @@ export const useTasksWithLocalStorage = () => {
   };
 
   return {
-    removeTask,
     setAllDone,
   };
 };

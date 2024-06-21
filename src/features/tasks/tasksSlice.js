@@ -5,7 +5,8 @@ const tasksSlice = createSlice({
     initialState: {
         tasks: [
             { id: 1, content: "przykładowo zrobione zadanie", done: true },
-            { id: 2, content: "przykładowo nie zrobione zadanie", done: false },],
+            { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
+        ],
         hideDone: false,
     },
     reducers: {
@@ -19,9 +20,12 @@ const tasksSlice = createSlice({
             const index = tasks.findIndex(({ id }) => id === payload);
             tasks[index].done = !tasks[index].done;
         },
+        removeTask: (state, { payload }) => {
+            state.tasks = state.tasks.filter(({ id }) => id !== payload);
+        },
     },
 });
 
-export const { addTask, toggleHideDone, toggleTaskDone } = tasksSlice.actions;
+export const { addTask, toggleHideDone, toggleTaskDone, removeTask } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
 export default tasksSlice.reducer;
