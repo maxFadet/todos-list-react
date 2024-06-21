@@ -1,19 +1,16 @@
 import React, { useRef, useState } from "react";
-import { nanoid } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
+import { nanoid } from "@reduxjs/toolkit";
 import { Frame, Type, Button } from "./styled";
 import { addTask } from "../tasksSlice";
-
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
   const inputRef = useRef(null);
-
   const dispatch = useDispatch();
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-
     const trimmedContent = newTaskContent.trim();
 
     if (!trimmedContent) {
@@ -42,8 +39,7 @@ const Form = () => {
         autoFocus
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      <Button onClick={focusInput}
-      >
+      <Button onClick={focusInput}>
         Dodaj zadanie
       </Button>
     </Frame>

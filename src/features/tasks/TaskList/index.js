@@ -1,13 +1,13 @@
-import React from "react";
 import { List, Item, Content, Button } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice";
+import { selectTasksState, toggleTaskDone, removeTask } from "../tasksSlice";
 
 const TaskList = () => {
-  const { tasks, hideDone } = useSelector(selectTasks);
+  const { tasks, hideDone } = useSelector(selectTasksState);
   const dispatch = useDispatch();
+
   return (
-    (
+
       <List>
         {tasks.map(task => (
           <Item
@@ -32,8 +32,7 @@ const TaskList = () => {
           </Item>
         ))}
       </List>
-    )
-  );
+    );
 };
 
 export default TaskList;
