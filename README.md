@@ -6,7 +6,7 @@ https://maxfadet.github.io/todos-list-react/
 
 ## Description:
 
-The ToDoList project is a simple web application for creating task lists
+The ToDoList project is a simple web application for creating task lists. It allows users to add tasks, mark them as completed, delete them, and filter based on completion status. Redux Toolkit simplifies state management and logic handling within the application.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -22,16 +22,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" **alt="Redux" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+ 
 </div>
 
 &nbsp;
   - Applied immutability in JavaScript
+  - useSelector Hook
+  - useDispatch Hook
+  - createSlice
+  - Redux Toolkit
   - React useState Hook
-  - React useEffect Hook
   - React useRef Hook
-  - React custom Hook
-  - localStorage
   - ES6+ Features JavaScript
   - CSS Grid Layout
   - Media-queries
@@ -58,9 +61,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 5. **Complete all tasks:**
    - Users can mark all tasks as completed at once by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-all-is-done.png" width="150">
-
-6. **Delete all tasks:**
-   - The user can permanently delete all tasks by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/delete-tasks.png" width="150">
 
 &nbsp;
 ## The demonstration of the project's main functions:
