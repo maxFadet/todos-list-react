@@ -4,14 +4,8 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
-import { useTasksWithLocalStorage } from "../../useTasksWithLocalStorage";
 
 function Tasks() {
-
-  const {
-    removeTask,
-    setAllDone,
-  } = useTasksWithLocalStorage();
 
   return (
     <Container>
@@ -24,12 +18,10 @@ function Tasks() {
         title="Lista zadań"
         body={
           <TaskList
-            removeTask={removeTask}
           />
         }
         extraHeadercontent={
           <Buttons
-            setAllDone={setAllDone}
           />
         }
       />
