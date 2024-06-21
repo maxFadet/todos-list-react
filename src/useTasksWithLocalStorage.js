@@ -1,12 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const useTasksWithLocalStorage = () => {
   const [tasks, setTasks] = useState(() => {
-    const savedTasks = localStorage.getItem("tasks");
-    return savedTasks ? JSON.parse(savedTasks) : [
-      { id: 1, content: "przykładowo zrobione zadanie", done: true },
-      { id: 2, content: "przykładowo nie zrobione zadanie", done: false },
-    ];
+    
   });
 
   const removeTask = (id) => {
