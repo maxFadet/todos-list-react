@@ -40,7 +40,7 @@ export const {
     setAllDone
 } = tasksSlice.actions;
 
-export const selectTasksState = state => state.tasks;
+export const selectHideDone = state => state.tasks.hideDone;
 
 export const selectAllTasksDone = state =>
     state.tasks.tasks.every(task => task.done);

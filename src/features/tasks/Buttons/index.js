@@ -3,13 +3,13 @@ import { Panel, Button } from "./styled";
 import {
     selectTasksNotEmpty,
     selectAllTasksDone,
-    selectTasksState,
+    selectHideDone,
     toggleHideDone,
     setAllDone
 } from "../tasksSlice";
 
 const Buttons = () => {
-    const { hideDone } = useSelector(selectTasksState);
+    const hideDone = useSelector(selectHideDone);
     const allTasksDone = useSelector(selectAllTasksDone);
     const tasksNotEmpty = useSelector(selectTasksNotEmpty);
     const dispatch = useDispatch();
