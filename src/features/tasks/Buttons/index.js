@@ -10,7 +10,7 @@ import {
 
 const Buttons = () => {
     const hideDone = useSelector(selectHideDone);
-    const allTasksDone = useSelector(selectAllTasksDone);
+    const isAllTasksDone = useSelector(selectAllTasksDone);
     const tasksNotEmpty = useSelector(selectTasksNotEmpty);
     const dispatch = useDispatch();
 
@@ -23,7 +23,7 @@ const Buttons = () => {
                     </Button>
                     <Button
                         onClick={() => dispatch(setAllDone())}
-                        disabled={allTasksDone}
+                        disabled={isAllTasksDone}
                     >
                         Ukończ wszystkie
                     </Button>
