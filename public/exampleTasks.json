@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "content": "przykładowo zrobione zadanie",
+    "done": true
+  },
+  {
+    "id": 2,
+    "content": "przykładowo nie zrobione zadanie",
+    "done": false
+  }
+]
