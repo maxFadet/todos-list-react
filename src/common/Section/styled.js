@@ -18,6 +18,7 @@ export const Header = styled.div`
         grid-template-columns: 1fr;
         text-align: center;
         grid-gap: 0;
+        padding-bottom: ${({ theme }) => theme.spacing.sectionPadding};
     }
 `;
 

@@ -7,7 +7,6 @@ export const Panel = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         grid-template-columns: 1fr;
-        padding-bottom: ${({ theme }) => theme.spacing.sectionPadding};
     }
 `;
 
