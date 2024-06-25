@@ -2,12 +2,12 @@ import styled, { css } from "styled-components";
 
 export const Panel = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     grid-gap: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         grid-template-columns: 1fr;
-        padding-bottom: 20px;
+        padding-bottom: ${({ theme }) => theme.spacing.sectionPadding};
     }
 `;
 
