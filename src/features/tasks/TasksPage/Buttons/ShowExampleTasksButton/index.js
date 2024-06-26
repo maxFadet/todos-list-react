@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "../styled";
-import { fetchExampleTasks, selectIsError, selectIsLoading, setError } from "../../tasksSlice";
+import { fetchExampleTasks, selectIsError, selectIsLoading, setError } from "../../../tasksSlice";
 
 const ShowExampleTasksButton = () => {
     const isLoading = useSelector(selectIsLoading);

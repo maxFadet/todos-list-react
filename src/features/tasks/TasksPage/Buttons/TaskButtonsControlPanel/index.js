@@ -6,7 +6,7 @@ import {
     selectHideDone,
     toggleHideDone,
     setAllDone,
-} from "../../tasksSlice";
+} from "../../../tasksSlice";
 
 const TaskButtonsControlPanel = () => {
     const hideDone = useSelector(selectHideDone);
