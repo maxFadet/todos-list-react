@@ -61,6 +61,9 @@ export const selectTasksList = state => selectTasksState(state).tasks;
 export const selectIsLoading = state => selectTasksState(state).isLoading;
 export const selectIsError = state => selectTasksState(state).isError;
 
+export const getTaskById = (state, taskId) =>
+    selectTasksList(state).find(({ id }) => id === taskId);
+
 export const selectAllTasksDone = state =>
     selectTasksList(state).every(task => task.done);
 
