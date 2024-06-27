@@ -10,11 +10,6 @@ export const Frame = styled.form`
     }
 `;
 
-export const Type = styled.input`
-    padding: ${({ theme }) => theme.spacing.contentPadding};
-    border: 2px solid ${({ theme }) => theme.colors.grey};
-`;
-
 export const Button = styled.button`
     padding: 10px;
     background-color: ${({ theme }) => theme.colors.teal};
