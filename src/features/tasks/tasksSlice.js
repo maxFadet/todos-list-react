@@ -64,6 +64,17 @@ export const selectIsError = state => selectTasksState(state).isError;
 export const getTaskById = (state, taskId) =>
     selectTasksList(state).find(({ id }) => id === taskId);
 
+export const selectTasksByQuery = (state, query) => {
+    const tasks = selectTasksList(state);
+
+    if (!query || query.trim() === "") {
+        return tasks;
+    }
+
+    return tasks.filter(({ content }) =>
+        content.toUpperCase().includes(query.trim().toUpperCase()));
+}
+
 export const selectAllTasksDone = state =>
     selectTasksList(state).every(task => task.done);
 
