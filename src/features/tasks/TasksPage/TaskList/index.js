@@ -22,7 +22,7 @@ const TaskList = () => {
             {task.done ? "✓" : ""}
           </Button>
           <Content done={task.done}>
-            <Link to={`/zadania/ ${task.id}`}>{task.content}</Link>
+            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
           </Content>
           <Button
             remove
