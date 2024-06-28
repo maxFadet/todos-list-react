@@ -38,5 +38,8 @@ export const theme = {
         buttonHover: "brightness(120%)",
         buttonActive: "brightness(70%)",
         buttonUnavailble: "brightness(100%)",
+    },
+    styles: {
+        removeStyle: "none",
     }
 };

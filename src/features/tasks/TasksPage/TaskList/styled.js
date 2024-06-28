@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
-    list-style: none;
+    list-style: ${({ theme }) => theme.styles.removeStyle};
     padding: 0;
     margin: 0;
 `;
