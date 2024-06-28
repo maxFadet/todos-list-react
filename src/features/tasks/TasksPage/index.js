@@ -4,7 +4,7 @@ import TaskButtonsControlPanel from "./Buttons/TaskButtonsControlPanel";
 import ShowExampleTasksButton from "./Buttons/ShowExampleTasksButton";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
-import Container from "../../../common/Container";
+import Container from "../../../common/Container/styled";
 import Search from "./Search";
 
 
