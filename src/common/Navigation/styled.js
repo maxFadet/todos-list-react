@@ -11,7 +11,7 @@ export const StyledNavLink = styled(NavLink)`
     }
 `;
 
-export const StyledNavList = styled.ul`
+export const StyledNavList = styled.nav`
     background: ${({ theme }) => theme.colors.teal};
     margin-top: 0;
     list-style: ${({ theme }) => theme.styles.removeStyle};
