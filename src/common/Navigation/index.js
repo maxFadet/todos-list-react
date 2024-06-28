@@ -1,14 +1,10 @@
-import { StyledNavLink } from "./styled";
+import { StyledNavLink, StyledNavList } from "./styled";
 
-const Navigation = () => {
-    <ul>
-        <li>
+export const Navigation = () => {
+    return (
+        <StyledNavList>
             <StyledNavLink to="/zadania">Zadania</StyledNavLink>
-        </li>
-        <li>
             <StyledNavLink to="/autor">O autorze</StyledNavLink>
-        </li>
-    </ul>
-}
-
-export default Navigation;
+        </StyledNavList>
+    );
+};
