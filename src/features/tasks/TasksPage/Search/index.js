@@ -1,5 +1,6 @@
 import { useHistory, useLocation } from "react-router-dom";
 import Input from "../../input";
+import { Wrapper } from "./styled";
 
 
 export default () => {
@@ -20,10 +21,12 @@ export default () => {
     };
 
     return (
-        <Input
-            placeholder="Filtruj zadania"
-            value={query || ""}
-            onChange={onInputChange}
-        />
+        <Wrapper>
+            <Input
+                placeholder="Filtruj zadania"
+                value={query || ""}
+                onChange={onInputChange}
+            />
+        </Wrapper>
     )
 };
