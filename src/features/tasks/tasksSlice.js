@@ -69,11 +69,11 @@ export const selectTasksByQuery = (state, query) => {
 
     if (!query || query.trim() === "") {
         return tasks;
-    }
+    };
 
     return tasks.filter(({ content }) =>
         content.toUpperCase().includes(query.trim().toUpperCase()));
-}
+};
 
 export const selectAllTasksDone = state =>
     selectTasksList(state).every(task => task.done);

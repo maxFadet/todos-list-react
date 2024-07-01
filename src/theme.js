@@ -57,5 +57,6 @@ export const theme = {
         paragraphFontSize: "18px",
         paragraphColor: "#666",
         paragraphMarginBottom: "20px",
+        containerMargin: "20px 0",
     },
 };

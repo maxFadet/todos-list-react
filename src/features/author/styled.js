@@ -4,7 +4,7 @@ export const BlogContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: ${({ theme }) => theme.blog.containerMargin};
     font-family: ${({ theme }) => theme.blog.fontFamily};
     line-height: ${({ theme }) => theme.blog.lineHeight};
 `;

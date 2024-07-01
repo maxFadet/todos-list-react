@@ -3,7 +3,7 @@ export const getExampleTasks = async () => {
 
     if (!response.ok) {
         new Error((response).statusText);
-    }
+    };
 
     return await response.json();
 };

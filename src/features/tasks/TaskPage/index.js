@@ -16,11 +16,16 @@ function TaskPage() {
             <Section
                 title={task ? task.content : "Nie znaleziono zadania 😢"}
                 body={!!task && (
-                    <><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</>
+                    <>
+                        <strong>
+                            Ukończono:
+                        </strong>
+                        {task.done ? "Tak" : "Nie"}
+                    </>
                 )}
             />
         </Container>
     );
-}
+};
 
 export default TaskPage;

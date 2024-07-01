@@ -7,7 +7,7 @@ import { Navigation } from "./common/Navigation";
 
 export default () => (
     <HashRouter>
-            <Navigation />
+        <Navigation />
         <Switch>
             <Route path="/zadania/:id">
                 <TaskPage />
