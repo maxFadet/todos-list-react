@@ -37,9 +37,25 @@ export const theme = {
     filters: {
         buttonHover: "brightness(120%)",
         buttonActive: "brightness(70%)",
-        buttonUnavailble: "brightness(100%)",
+        buttonUnavailable: "brightness(100%)",
     },
     styles: {
         removeStyle: "none",
-    }
+    },
+    blog: {
+        fontFamily: "'Georgia', serif",
+        lineHeight: "1.6",
+        imageWidth: "200px",
+        imageHeight: "200px",
+        imageBorderRadius: "50%",
+        imageMarginBottom: "50px",
+        contentMaxWidth: "800px",
+        contentPadding: "20px",
+        contentBackgroundColor: "#E0F5F4",
+        contentBorderRadius: "8px",
+        contentBoxShadow: "0 0px 9px rgb(0 0 0 / 29%)",
+        paragraphFontSize: "18px",
+        paragraphColor: "#666",
+        paragraphMarginBottom: "20px",
+    },
 };
