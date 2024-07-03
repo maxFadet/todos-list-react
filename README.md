@@ -6,7 +6,7 @@ https://maxfadet.github.io/todos-list-react/
 
 ## Description:
 
-The ToDoList project is a simple web application for creating task lists. It allows users to add tasks, mark them as completed, delete them, and filter based on completion status. Redux Toolkit simplifies state management and logic handling within the application.
+The ToDoList project is a simple and intuitive web application designed for creating and managing task lists. It allows users to add tasks, mark them as completed, delete them, and filter tasks based on their completion status. The application leverages Redux Toolkit for efficient state management and local storage to ensure tasks are saved and persist across sessions.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,14 +29,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 &nbsp;
   - Applied immutability in JavaScript
-  - useSelector Hook
-  - useDispatch Hook
+  - Redux-Saga
+  - React Router
+  - js generators
+  - useSelector
+  - useDispatch
+  - useLocation
+  - useParams
+  - use History
+  - useURLSearchParams
   - createSlice
   - Redux Toolkit
-  - React useState Hook
-  - React useRef Hook
+  - React useState
+  - React useRef
   - ES6+ Features JavaScript
+  - localStorage
   - CSS Grid Layout
+  - CSS Flex Layout
   - Media-queries
   - The box model
   - Styled components
@@ -75,6 +84,9 @@ Recently added features 01 July 2024
 
 9. **Complete all tasks:**
    - Users can mark all tasks as completed at once by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-all-is-done.png" width="150">
+
+10. **Automatic Task Saving:**
+    - All your tasks are automatically saved in your browser's local storage. This means your tasks will be there even if you close the browser or refresh the page. No need to worry about losing your progress! 
 
 &nbsp;
 ## The demonstration of the project's main functions:
