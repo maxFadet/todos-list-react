@@ -54,9 +54,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Markdown
 &nbsp;
 
-## Key Features
+### Key Features
 
-Recently added features 01 July 2024
+1. **Add New Task:**
+   - Users can add new tasks by entering task text into the input field and clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/buttton-add.png" width="110">
+
+2. **Mark Task as Done:**
+   - Users can mark tasks as done by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-done.gif" width="150">. The task will be crossed out to indicate completion.
+
+3. **Delete Task:**
+   - Users can delete a task by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-delete.gif" width="25">
+
+4. **Switching Task Groups:**
+   - Users can switch between completed and unfinished tasks by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-cover.png" width="150">
+
+5. **Complete All Tasks:**
+   - Users can mark all tasks as completed at once by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-all-is-done.png" width="150">
+
+### Recent Additions
 
 1. **Navigation Menu:**
    - Implemented a navigation menu with links to "Zadania" (Tasks) and "O autorze" (About the author) sections for easier access to different parts of the application.
@@ -70,23 +85,13 @@ Recently added features 01 July 2024
 4. **Show Example Tasks Button:**
    - Included a button to display example tasks for new users to explore and understand the application's functionality.
 
-5. **Add New Task:**
-   - Users can add new tasks by entering task text into the input field and clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/buttton-add.png" width="110">
+### Local Storage Feature
 
-6. **Mark Task as Done:**
-   - Users can mark tasks as done by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-done.gif" width="150">. The task will be crossed out to indicate completion.
+1. **Automatic Task Saving:**
+   - All your tasks are automatically saved in your browser's local storage. This means your tasks will be there even if you close the browser or refresh the page. No need to worry about losing your progress!
 
-7. **Delete Task:**
-   - Users can delete a task by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-delete.gif" width="25">
-
-8. **Switching task groups:**
-   - Users can switch between completed and unfinished tasks by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-cover.png" width="150">
-
-9. **Complete all tasks:**
-   - Users can mark all tasks as completed at once by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-all-is-done.png" width="150">
-
-10. **Automatic Task Saving:**
-    - All your tasks are automatically saved in your browser's local storage. This means your tasks will be there even if you close the browser or refresh the page. No need to worry about losing your progress! 
+2. **Persistent Data:**
+   - Your task list remains intact and available the next time you open the application. This makes task management convenient and reliable, ensuring you can pick up right where you left off.
 
 &nbsp;
 ## The demonstration of the project's main functions:
@@ -96,7 +101,7 @@ Recently added features 01 July 2024
 
 &nbsp;
 
-## The demonstration of page responsiveness:
+## How an app looks on mobile devices:
 <div align="center">
 <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/responsiveness.gif" title="Responsiveness" alt="Responsiveness" width="600"/>
 </div>
