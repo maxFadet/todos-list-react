@@ -6,7 +6,7 @@ https://maxfadet.github.io/todos-list-react/
 
 ## Description:
 
-The ToDoList project is a simple web application for creating task lists. It allows users to add tasks, mark them as completed, delete them, and filter based on completion status. Redux Toolkit simplifies state management and logic handling within the application.
+The ToDoList project is a simple and intuitive web application designed for creating and managing task lists. It allows users to add tasks, mark them as completed, delete them, and filter tasks based on their completion status. The application leverages Redux Toolkit for efficient state management and local storage to ensure tasks are saved and persist across sessions.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,14 +29,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 &nbsp;
   - Applied immutability in JavaScript
-  - useSelector Hook
-  - useDispatch Hook
+  - Redux-Saga
+  - React Router
+  - js generators
+  - useSelector
+  - useDispatch
+  - useLocation
+  - useParams
+  - use History
+  - useURLSearchParams
   - createSlice
   - Redux Toolkit
-  - React useState Hook
-  - React useRef Hook
+  - React useState
+  - React useRef
   - ES6+ Features JavaScript
+  - localStorage
   - CSS Grid Layout
+  - CSS Flex Layout
   - Media-queries
   - The box model
   - Styled components
@@ -45,7 +54,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Markdown
 &nbsp;
 
-## Key Features
+### Key Features
 
 1. **Add New Task:**
    - Users can add new tasks by entering task text into the input field and clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/buttton-add.png" width="110">
@@ -56,11 +65,33 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. **Delete Task:**
    - Users can delete a task by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-delete.gif" width="25">
 
-4. **Switching task groups:**
+4. **Switching Task Groups:**
    - Users can switch between completed and unfinished tasks by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-cover.png" width="150">
 
-5. **Complete all tasks:**
+5. **Complete All Tasks:**
    - Users can mark all tasks as completed at once by clicking <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/button-all-is-done.png" width="150">
+
+### Recent Additions
+
+1. **Navigation Menu:**
+   - Implemented a navigation menu with links to "Zadania" (Tasks) and "O autorze" (About the author) sections for easier access to different parts of the application.
+  
+2. **Author Section:**
+   - Added an "O autorze" (About the author) section featuring a detailed article about the author along with a photograph for personalization.
+  
+3. **Task Search Capability:**
+   - Introduced a search functionality allowing users to search tasks based on keywords, enhancing task management efficiency.
+
+4. **Show Example Tasks Button:**
+   - Included a button to display example tasks for new users to explore and understand the application's functionality.
+
+### Local Storage Feature
+
+1. **Automatic Task Saving:**
+   - All your tasks are automatically saved in your browser's local storage. This means your tasks will be there even if you close the browser or refresh the page. No need to worry about losing your progress!
+
+2. **Persistent Data:**
+   - Your task list remains intact and available the next time you open the application. This makes task management convenient and reliable, ensuring you can pick up right where you left off.
 
 &nbsp;
 ## The demonstration of the project's main functions:
@@ -70,7 +101,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 &nbsp;
 
-## The demonstration of page responsiveness:
+## How an app looks on mobile devices:
 <div align="center">
 <img src="https://raw.githubusercontent.com/maxFadet/todos-list-react/main/images/responsiveness.gif" title="Responsiveness" alt="Responsiveness" width="600"/>
 </div>
