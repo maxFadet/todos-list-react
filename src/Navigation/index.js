@@ -1,5 +1,5 @@
 import { StyledNavLink, StyledNavList } from "./styled";
-import { toAuthor, toTasks } from "./routes";
+import { toAuthor, toTasks } from "../routes";
 
 
 
