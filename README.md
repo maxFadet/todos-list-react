@@ -30,7 +30,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 &nbsp;
   - Applied immutability in JavaScript
   - Redux-Saga
-  - React Router
+  - Redux-Router
+  - Redux Toolkit
   - js generators
   - useSelector
   - useDispatch
