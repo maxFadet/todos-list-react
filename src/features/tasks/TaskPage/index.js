@@ -18,7 +18,7 @@ function TaskPage() {
                 body={!!task && (
                     <>
                         <strong>
-                            Ukończono:
+                            Ukończone:
                         </strong>
                         {task.done ? "Tak" : "Nie"}
                     </>
