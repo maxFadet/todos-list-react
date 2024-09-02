@@ -1,8 +1,6 @@
 import { StyledNavLink, StyledNavList } from "./styled";
 import { toAuthor, toTasks } from "../routes";
 
-
-
 export const Navigation = () => {
     return (
         <StyledNavList>

@@ -40,6 +40,5 @@ export const Button = styled.button`
             transform: none;
             filter: ${theme.filters.buttonUnavailble};
         }
-    
     `};
 `;

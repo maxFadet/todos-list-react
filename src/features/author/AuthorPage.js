@@ -4,7 +4,6 @@ import Section from "../../common/Section";
 import { BlogContainer, BlogContent, BlogImage, BlogParagraph } from "./styled";
 import personalPhoto from "./personal-photo.jpg";
 
-
 export default () => (
     <Container>
         <Header title="O autorze" />
