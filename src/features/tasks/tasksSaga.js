@@ -3,7 +3,7 @@ import { fetchExampleTasks, setTasks, setLoading, setError, selectTasksList, set
 import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 
-function* fetchExmpleTasksHandler() {
+function* fetchExampleTasksHandler() {
     try {
         yield put(setStatus({ isLoading: true, isError: false }));
         yield delay(1000);
@@ -22,6 +22,6 @@ function* saveTasksInLocalStorageHandler() {
 }
 
 export function* tasksSaga() {
-    yield takeLatest(fetchExampleTasks.type, fetchExmpleTasksHandler);
+    yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler);
 };
