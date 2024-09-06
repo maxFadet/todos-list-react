@@ -32,12 +32,10 @@ const tasksSlice = createSlice({
         setTasks: (state, { payload: tasks }) => {
             state.tasks = tasks;
         },
-        setLoading: (state, { payload: isLoading }) => {
+        setStatus: (state, { payload: { isLoading, isError } }) => {
             state.isLoading = isLoading;
-        },
-        setError: (state, { payload: isError }) => {
             state.isError = isError;
-        }
+        },
     },
 },
 );
@@ -50,8 +48,7 @@ export const {
     setAllDone,
     fetchExampleTasks,
     setTasks,
-    setLoading,
-    setError
+    setStatus
 } = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;
