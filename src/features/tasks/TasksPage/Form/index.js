@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import { Frame, Button } from "./styled";
@@ -10,7 +10,7 @@ const Form = () => {
   const inputRef = useRef(null);
   const dispatch = useDispatch();
 
-  const onFormSubmit = (event) => {
+  const onFormSubmit = useCallback((event) => {
     event.preventDefault();
   
     const trimmedContent = newTaskContent.trim();
@@ -24,12 +24,12 @@ const Form = () => {
     }));
   
     setNewTaskContent("");
-  };
-
-  const focusInput = () => {
+  }, [newTaskContent, dispatch]);
+  
+  const focusInput = useCallback(() => {
     inputRef.current.focus();
-  };
-
+  }, []);
+  
   return (
     <Frame onSubmit={onFormSubmit}>
       <Input
