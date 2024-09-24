@@ -8,7 +8,9 @@ export const theme = {
         forestGreen: "#1A7A1D",
     },
     breakpoints: {
-        mobile: "767px",
+        mobile: "480px",
+        tablet: "767px",
+        laptop: "1024px",
     },
     spacing: {
         containerMargin: "0 auto",
