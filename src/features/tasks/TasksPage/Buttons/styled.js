@@ -27,18 +27,16 @@ export const Button = styled.button`
     }
 
     ${({ disabled, theme }) => disabled && css`
-        &:disabled {
-            color: ${theme.colors.darkGrey};
-            cursor: ${theme.cursor.cursorNotAllowed};
-        }
+    color: ${theme.colors.darkGrey};
+    cursor: ${theme.cursor.cursorNotAllowed};
+    
+    &:hover {
+        filter: none;
+    }
 
-        &:hover {
-            filter: ${theme.filters.buttonUnavailble};
-        }
-
-        &:active {
-            transform: none;
-            filter: ${theme.filters.buttonUnavailble};
-        }
-    `};
+    &:active {
+        transform: none;
+        filter: none;
+    }
+`};
 `;
