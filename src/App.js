@@ -1,32 +1,51 @@
+import React, { useState, useEffect } from 'react';
+import { HashRouter as Router, Switch, Route, Redirect, useLocation } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
-import {
-    HashRouter,
-    Switch,
-    Route,
-    Redirect
-} from "react-router-dom";
-import { toAuthor, toTask, toTasks } from "./routes";
 import { Navigation } from "./Navigation";
+import { Loader } from "./common/Loader";
+
+const App = () => {
+    const [loading, setLoading] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        setLoading(true);
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, [location]);
+
+    return (
+        <>
+            <Navigation />
+            {loading ? (
+                <Loader extraTopMargin={true} />
+            ) : (
+                <Switch>
+                    <Route path="/zadania">
+                        <TasksPage />
+                    </Route>
+                    <Route path="/autor">
+                        <AuthorPage />
+                    </Route>
+                    <Route path="/task/:id">
+                        <TaskPage />
+                    </Route>
+                    <Route>
+                        <Redirect to="/zadania" />
+                    </Route>
+                </Switch>
+            )}
+        </>
+    );
+};
 
 export default () => (
-    <HashRouter>
-        <Navigation />
-
-        <Switch>
-            <Route path={toTask()}>
-                <TaskPage />
-            </Route>
-            <Route path={toTasks()}>
-                <TasksPage />
-            </Route>
-            <Route path={toAuthor()}>
-                <AuthorPage />
-            </Route>
-            <Route>
-                <Redirect to={toTasks()} />
-            </Route>
-        </Switch>
-    </HashRouter>
+    <Router>
+        <App />
+    </Router>
 );
