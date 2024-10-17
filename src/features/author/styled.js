@@ -20,13 +20,13 @@ export const BlogImage = styled.img`
 export const BlogContent = styled.div`
     max-width: ${({ theme }) => theme.blog.contentMaxWidth};
     padding: ${({ theme }) => theme.blog.contentPadding};
-    background-color: ${({ theme }) => theme.blog.contentBackgroundColor};
+    background-color: ${({ theme }) => theme.colors.teal};
     border-radius: ${({ theme }) => theme.blog.contentBorderRadius};
     box-shadow: ${({ theme }) => theme.blog.contentBoxShadow};
 `;
 
 export const BlogParagraph = styled.p`
     font-size: ${({ theme }) => theme.blog.paragraphFontSize};
-    color: ${({ theme }) => theme.blog.paragraphColor};
+    color: ${({ theme }) => theme.colors.white};
     margin-bottom: ${({ theme }) => theme.blog.paragraphMarginBottom};
 `;
