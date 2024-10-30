@@ -5,6 +5,7 @@ import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
 import { Navigation } from "./Navigation";
 import { Loader } from "./common/Loader";
+import { Footer } from './common/Footer';
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -40,6 +41,7 @@ const App = () => {
                     </Route>
                 </Switch>
             )}
+            <Footer />
         </>
     );
 };
