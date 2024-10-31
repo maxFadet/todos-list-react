@@ -6,6 +6,7 @@ import AuthorPage from "./features/author/AuthorPage";
 import { Navigation } from "./Navigation";
 import { Loader } from "./common/Loader";
 import { Footer } from './common/Footer';
+import { AppWrapper, MainContent } from "./styled.js";
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -21,28 +22,30 @@ const App = () => {
     }, [location.pathname]);
 
     return (
-        <>
+        <AppWrapper>
             <Navigation />
-            {loading ? (
-                <Loader extraTopMargin={true} />
-            ) : (
-                <Switch>
-                    <Route path="/zadania">
-                        <TasksPage />
-                    </Route>
-                    <Route path="/autor">
-                        <AuthorPage />
-                    </Route>
-                    <Route path="/task/:id">
-                        <TaskPage />
-                    </Route>
-                    <Route>
-                        <Redirect to="/zadania" />
-                    </Route>
-                </Switch>
-            )}
+            <MainContent>
+                {loading ? (
+                    <Loader extraTopMargin={true} />
+                ) : (
+                    <Switch>
+                        <Route path="/zadania">
+                            <TasksPage />
+                        </Route>
+                        <Route path="/autor">
+                            <AuthorPage />
+                        </Route>
+                        <Route path="/task/:id">
+                            <TaskPage />
+                        </Route>
+                        <Route>
+                            <Redirect to="/zadania" />
+                        </Route>
+                    </Switch>
+                )}
+            </MainContent>
             <Footer />
-        </>
+        </AppWrapper>
     );
 };
 
