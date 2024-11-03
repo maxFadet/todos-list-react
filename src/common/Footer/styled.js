@@ -10,3 +10,8 @@ export const Content = styled.p`
    padding: 10px;
    color: ${({ theme }) => theme.colors.white};
 `;
+
+export const Link = styled.a`
+    color: ${({ theme }) => theme.colors.black};
+    text-decoration: none;
+`;

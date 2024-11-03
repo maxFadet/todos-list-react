@@ -6,6 +6,7 @@ export const theme = {
         white: "#ffffff",
         alizarinCrimson: "hsl(355, 84%, 55%)",
         forestGreen: "#1A7A1D",
+        black: "#000000"
     },
     breakpoints: {
         mobile: "480px",
