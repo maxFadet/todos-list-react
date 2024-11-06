@@ -3,7 +3,7 @@ import { HashRouter as Router, Switch, Route, Redirect, useLocation } from "reac
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
-import { Navigation } from "./Navigation";
+import { Navigation } from "./common/Navigation/index.js";
 import { Loader } from "./common/Loader";
 import { Footer } from './common/Footer';
 import { AppWrapper, MainContent } from "./styled.js";
