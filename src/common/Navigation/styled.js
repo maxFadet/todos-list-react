@@ -16,11 +16,11 @@ export const StyledNavLink = styled(NavLink)`
         content: "";
         position: absolute;
         left: 0;
-        bottom: 5px;
+        bottom: 15px;
         width: 0;
         height: 2px;
         background-color: ${({ theme }) => theme.colors.white};
-        transition: width 0.3s ease;
+        transition: width 0.3s ease-in-out;
     }
 
     &:hover::after {
