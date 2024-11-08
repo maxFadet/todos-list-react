@@ -16,7 +16,7 @@ export const StyledNavLink = styled(NavLink)`
         content: "";
         position: absolute;
         left: 0;
-        bottom: 15px;
+        bottom: 10px;
         width: 0;
         height: 2px;
         background-color: ${({ theme }) => theme.colors.white};
