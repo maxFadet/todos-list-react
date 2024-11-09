@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-   margin: 0;
+   margin: 100px 0 0;
    background: ${({ theme }) => theme.colors.teal};
    text-align: center;
 `;
