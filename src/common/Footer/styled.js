@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
    margin: 100px 0 0;
@@ -41,11 +41,21 @@ export const SocialIcons = styled.div`
   }
 `;
 
+const smoothTwist = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
 export const SocialMediaLink = styled.a`
   color: white;
+  display: inline-block;
   transition: color 0.3s ease;
 
   &:hover {
-    color: blue;
+    animation: ${smoothTwist} 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
