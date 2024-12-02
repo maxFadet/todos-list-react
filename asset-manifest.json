@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.js": "/todos-list-react/static/js/main.b5cc136f.js",
+    "main.js": "/todos-list-react/static/js/main.97e4497a.js",
     "static/js/453.3dd2d477.chunk.js": "/todos-list-react/static/js/453.3dd2d477.chunk.js",
     "static/media/personal-photo.jpg": "/todos-list-react/static/media/personal-photo.af9008a01c61ddc42e1e.jpg",
+    "static/media/Instagram.svg": "/todos-list-react/static/media/Instagram.58664ee35a8b7f1a0d1cc29caa53cdaa.svg",
+    "static/media/Github.svg": "/todos-list-react/static/media/Github.2ebc3746d4d662ccb46abc8b6cd12391.svg",
     "index.html": "/todos-list-react/index.html",
+    "static/media/LinkedIN.svg": "/todos-list-react/static/media/LinkedIN.1ebeba5f491f76073108be5bd18842fb.svg",
+    "static/media/Facebook.svg": "/todos-list-react/static/media/Facebook.ee66d4efcb444b319ce730206e92ec65.svg",
     "static/media/Ellipse.svg": "/todos-list-react/static/media/Ellipse.50d355a2738849da5e15dcfba073bc30.svg",
-    "main.b5cc136f.js.map": "/todos-list-react/static/js/main.b5cc136f.js.map",
+    "main.97e4497a.js.map": "/todos-list-react/static/js/main.97e4497a.js.map",
     "453.3dd2d477.chunk.js.map": "/todos-list-react/static/js/453.3dd2d477.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b5cc136f.js"
+    "static/js/main.97e4497a.js"
   ]
 }
