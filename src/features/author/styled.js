@@ -15,6 +15,14 @@ export const BlogImage = styled.img`
     height: ${({ theme }) => theme.blog.imageHeight};
     border-radius: ${({ theme }) => theme.blog.imageBorderRadius};
     margin: ${({ theme }) => theme.blog.imageMargin};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        height: 220px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        height: 150px;
+    }
 `;
 
 export const BlogContent = styled.div`
