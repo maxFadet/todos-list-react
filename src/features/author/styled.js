@@ -6,6 +6,10 @@ export const BlogContainer = styled.div`
     margin: auto;
     width: 100%;
     padding: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        padding: 15px;
+    }
 `;
 
 export const BlogImage = styled.img`
@@ -22,6 +26,7 @@ export const BlogImage = styled.img`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         height: 150px;
+        margin: 0 20px 5px 0;
     }
 `;
 
