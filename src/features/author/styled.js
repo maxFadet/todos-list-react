@@ -38,6 +38,10 @@ export const BlogParagraph = styled.p`
     font-size: ${({ theme }) => theme.blog.paragraphFontSize};
     margin-bottom: ${({ theme }) => theme.blog.paragraphMarginBottom};
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 15px;
+    }
+
     &:first-child {
         margin-top: 0;
     }
