@@ -4,6 +4,14 @@ export const Wrapper = styled.div`
    margin: 100px 0 0;
    background: ${({ theme }) => theme.colors.teal};
    text-align: center;
+
+   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      margin-top: 65px;
+  }
+
+   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      margin-top: 50px;
+  }
 `;
 
 export const Content = styled.p`
