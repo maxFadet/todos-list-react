@@ -63,6 +63,16 @@ export const SocialMediaLink = styled.a`
   display: inline-block;
   transition: color 0.3s ease;
 
+  svg {
+    width: 32px;
+    height: 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   &:hover {
     animation: ${smoothTwist} 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
