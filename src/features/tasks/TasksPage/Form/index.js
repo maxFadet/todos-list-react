@@ -12,24 +12,24 @@ const Form = () => {
 
   const onFormSubmit = useCallback((event) => {
     event.preventDefault();
-  
+
     const trimmedContent = newTaskContent.trim();
-  
+
     if (!trimmedContent) return;
-  
+
     dispatch(addTask({
       content: trimmedContent,
       done: false,
       id: nanoid(),
     }));
-  
+
     setNewTaskContent("");
   }, [newTaskContent, dispatch]);
-  
+
   const focusInput = useCallback(() => {
     inputRef.current.focus();
   }, []);
-  
+
   return (
     <Frame onSubmit={onFormSubmit}>
       <Input
