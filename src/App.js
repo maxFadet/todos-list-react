@@ -29,14 +29,14 @@ const App = () => {
                     <Loader extraTopMargin={true} />
                 ) : (
                     <Switch>
-                        <Route path="/zadania">
+                        <Route exact path="/zadania">
                             <TasksPage />
+                        </Route>
+                        <Route path="/zadania/:id">
+                            <TaskPage />
                         </Route>
                         <Route path="/autor">
                             <AuthorPage />
-                        </Route>
-                        <Route path="/task/:id">
-                            <TaskPage />
                         </Route>
                         <Route>
                             <Redirect to="/zadania" />
