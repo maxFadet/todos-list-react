@@ -14,19 +14,19 @@ export default () => (
                     <BlogImage src={personalPhoto} alt="Maksim Padrabinkin" />
                     <BlogContent>
                         <BlogParagraph>
-                            Cześć. Jestem bardzo <strong>wszechstronną osobą</strong>. Prawie nie mam wolnego czasu. Zawsze jestem czymś zajęty. Lubię próbować coś nowego.
+                            Cześć! Jestem bardzo <strong>wszechstronną osobą</strong>. Prawie nie mam wolnego czasu, ponieważ zawsze jestem czymś zajęty. Uwielbiam próbować nowych rzeczy.
                         </BlogParagraph>
                         <BlogParagraph>
-                            Obecnie moim głównym celem jest <strong>odniesienie sukcesu w Frontend Development</strong>. Moja codzienna rutyna to nauka programowania, języka angielskiego, workout fitness, joga, medytacja.
+                            Obecnie moim głównym celem jest <strong>odniesienie sukcesu w Frontend Development</strong>. Moja codzienna rutyna obejmuje naukę programowania, języka angielskiego, ćwiczenia fitness, jogę i medytację.
                         </BlogParagraph>
                         <BlogParagraph>
-                            Kiedy zajmuję się czymś, co nie angażuje mojego pełnego uwagi, <strong>słucham podcastów po angielsku</strong>. Oczywiście kocham muzykę, głównie ciężką, taką jak <em>Death Core, Nu-metal</em> itp.
+                            Kiedy zajmuję się czymś, co nie wymaga pełnego skupienia, <strong>słucham podcastów po angielsku</strong>. Oczywiście kocham muzykę, zwłaszcza cięższe gatunki, takie jak <em>deathcore, nu-metal</em> itp.
                         </BlogParagraph>
                         <BlogParagraph>
-                            <strong>Potrafię również dobrze gotować</strong> i czasami sprawia mi to przyjemność. Jestem zapalonym zwolennikiem realizacji swoich zaplanowanych codziennych zadań.
+                            <strong>Potrafię również dobrze gotować</strong>, co czasami sprawia mi dużo przyjemności. Jestem zapalonym zwolennikiem realizacji zaplanowanych codziennych zadań.
                         </BlogParagraph>
                         <BlogParagraph>
-                            Moje top aplikacje na telefonie to <em>AnkiApp, Disciplined, Spotify, Lingvo, Balance</em>.
+                            Moje ulubione aplikacje na telefonie to <em>AnkiApp, Disciplined, Spotify, Lingvo, Balance, Blissful</em>.
                         </BlogParagraph>
                     </BlogContent>
                 </BlogContainer>
