@@ -18,10 +18,12 @@ const ShowExampleTasksButton = () => {
             <Button onClick={handleClick} disabled={isLoading}>
                 {isLoading ? "Loading..." : "Pobierz przykładowe zadania"}
             </Button>
-            {isError &&
+            {
+                isError &&
                 <div style={{ color: 'red' }}>
                     Nie udało się załadować zadań. Spróbuj ponownie później.
-                </div>}
+                </div>
+            }
         </>
     );
 };
