@@ -52,8 +52,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Normalize.css
   - BEM convention
   - Markdown
-&nbsp;
 
+&nbsp;
 ### Key Features
 
 1. **Add New Task:**
